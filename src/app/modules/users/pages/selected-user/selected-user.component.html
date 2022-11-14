@@ -1,0 +1,10 @@
+<div *ngIf="user;else loading">
+  Selected User: <br>
+  ID: {{user.id}} <br>
+  Name: {{user.name}} <br>
+  Email: {{user.email}} <br>
+</div>
+
+<ng-template #loading>
+  <div>Loading...</div>
+</ng-template>

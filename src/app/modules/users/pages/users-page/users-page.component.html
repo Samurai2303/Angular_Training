@@ -1,0 +1,10 @@
+<div>
+<div>
+  <app-user-form (searchedUsers)="searchUsers($event)"></app-user-form>
+  <app-users></app-users>
+</div>
+<div>
+  Searched users: <br>
+  <app-searched-users [users]="searchedUsers"></app-searched-users>
+</div>
+</div>

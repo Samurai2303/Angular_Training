@@ -1,0 +1,15 @@
+.wrap {
+  display: flex;
+  justify-content: space-evenly;
+  background: lightskyblue;
+  align-items: center;
+}
+.wrap a {
+  display: block;
+  text-decoration: none;
+  color: cornflowerblue;
+}
+.active {
+  color: darkblue;
+  font-weight: 600;
+}

@@ -1,0 +1,5 @@
+<form #form="ngForm" (ngSubmit)="search(form)">
+  <input type="number" name="id" placeholder="Enter ID" #id="ngModel" [(ngModel)]="user.id" required>
+  <input type="text" name="name" placeholder="Enter name" #name="ngModel" [(ngModel)]="user.name" required>
+  <button>Search</button>
+</form>
