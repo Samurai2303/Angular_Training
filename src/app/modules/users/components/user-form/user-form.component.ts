@@ -22,6 +22,10 @@ export class UserFormComponent implements OnInit {
 
   search(form: NgForm) {
     this.usersService.getAll().subscribe((value) => {
+      this.searchedUsers.emit(value)
+
+
+
     })
   }
 }
