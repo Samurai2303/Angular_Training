@@ -1,0 +1,8 @@
+<div class="wrap" *ngIf="films;else loading">
+  <app-newest-film *ngFor="let film of films.results" [film]="film"></app-newest-film>
+</div>
+
+
+<ng-template #loading>
+  <div>Loading...</div>
+</ng-template>

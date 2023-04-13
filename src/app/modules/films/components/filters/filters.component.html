@@ -1,0 +1,45 @@
+<div class="mainWrap">
+  <div [className]="genresState">
+    <div class="genresHead">
+      <div class="genresTitleWrap">
+        <p class="genresTitle">Genres</p>
+        <div class="underline"></div>
+      </div>
+      <p [className]="genresState" (click)="openClose()">
+        <i class="fa-solid fa-arrow-down"></i>
+      </p>
+    </div>
+    <div class="genres" *ngIf="genres;  else loading">
+      <label *ngFor="let genre of genres.genres" class="genreLabel">
+        <input type="checkbox" [value]="genre.id">
+        <p>{{genre.name}}</p>
+      </label>
+    </div>
+  </div>
+  <input type="number" placeholder="Enter year" class="yearInput">
+  <label class="adultLabel"><input type="checkbox"> Include adult</label>
+  <label class="voteLabel"><input type="range" class="voteInput">Average vote</label>
+  <label>
+    <select>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+    </select>
+    Sort by
+  </label>
+</div>
+
+
+<ng-template #loading>
+  <div>fddsadsa</div>
+  <!--  <app-loading></app-loading>-->
+</ng-template>
+
+

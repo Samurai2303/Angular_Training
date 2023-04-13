@@ -1,0 +1,160 @@
+.mainWrap {
+  width: 250px;
+  padding: 10px;
+}
+
+.mainWrap > div[class='closed'] {
+  height: 40px;
+  border: 3px solid white;
+  box-shadow: 0 0 10px 0 white;
+  border-radius: 0 0 25px 25px;
+  padding: 5px;
+  transition: 400ms;
+  overflow: hidden;
+}
+
+.mainWrap > div[class='opened'] {
+  height: 500px;
+  border: 3px solid white;
+  box-shadow: 0 0 10px 0 white;
+  border-radius: 0 0 25px 25px;
+  padding: 5px;
+  transition: 400ms;
+  overflow: hidden;
+}
+
+.genresHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.genresHead p[class='closed'] {
+  transition: 300ms;
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px white inset;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px 0 0;
+}
+
+.genresHead p[class='opened'] {
+  transition: 300ms;
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px white inset;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+  margin: 0 15px 0 0;
+}
+
+.genresHead i {
+  transition: 300ms;
+  color: white;
+  font-size: 20px;
+}
+
+.genresHead > div {
+  color: white;
+  font-size: 20px;
+  font-weight: 550;
+  margin: 0 0 0 15px;
+  text-shadow: 0 0 10px white;
+}
+
+.underline {
+  width: 70px;
+  height: 1px;
+  border: 1px solid white;
+  box-shadow: 0 0 8px 3px white;
+  border-radius: 50%;
+  margin: 3px 0 0 0;
+}
+
+.genresTitleWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.genresTitle {
+  margin: 0;
+}
+
+.genres {
+  margin-top: 10px;
+}
+.genreLabel {
+  display: flex;
+  margin: 5px;
+}
+.genreLabel p{
+  color: white;
+  margin: 0 0 0 5px;
+}
+
+.yearInput {
+  background: white;
+  width: 150px;
+  height: 25px;
+  border: 2px solid white;
+  box-shadow: 0 0 8px 1px black inset;
+  font-size: 17px;
+  color: black;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 0 5px 0 5px;
+  display: block;
+}
+
+.adultLabel {
+  display: block;
+  color: white;
+  font-size: 21px;
+  font-family: "Bell MT", sans-serif;
+}
+
+.voteLabel {
+  display: block;
+
+}
+
+.voteInput {
+  color:white;
+  background: silver;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: black;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 100px 12px white inset;
+  margin-top: -6px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 3px 1px white;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+

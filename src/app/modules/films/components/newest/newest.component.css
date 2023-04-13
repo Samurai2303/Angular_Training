@@ -1,0 +1,22 @@
+.wrap {
+  display: flex;
+  height: 240px;
+  margin-top: 15px;
+  overflow: auto;
+}
+
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 4px 0 black inset;
+}
+
+
+
+
+

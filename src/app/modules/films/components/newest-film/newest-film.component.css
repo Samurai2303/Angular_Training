@@ -1,0 +1,38 @@
+.wrap {
+  height: 230px;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5px;
+}
+
+img {
+  height: 150px;
+}
+
+.line {
+  width: 90%;
+  height: 1px;
+  border-radius: 50%;
+  border: 1px solid white;
+  box-shadow: 0 0 12px 1px white;
+  margin: 5px;
+}
+
+
+.info {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+}
+
+.lineBottom{
+  width: 90%;
+  height: 1px;
+  border-radius: 50%;
+  border: 1px solid white;
+  box-shadow: 0 0 12px 1px white;
+  margin: 5px;
+}
+

@@ -1,0 +1,14 @@
+<div class="wrap">
+  <div *ngIf="film.poster_path && posterUrl; else noPhoto">
+    <img [src]='posterUrl' alt="poster">
+  </div>
+  <div class="line"></div>
+  <div class="info">
+    {{film.title}}
+  </div>
+  <div class="lineBottom"></div>
+</div>
+
+<ng-template #noPhoto>
+  <div>No photo</div>
+</ng-template>

@@ -1,0 +1,26 @@
+<div class="wrap">
+  <div class="titleWrap" (click)="home()">
+    <span class="titleText">Find your movie</span>
+    <span class="titleWaves"></span>
+  </div>
+  <label class="label">
+    <input type="text" class="input">
+    <button class="searchBtn">
+      <span class="searchBtnText"><i class="fa-solid fa-magnifying-glass"></i></span>
+      <span class="searchBtnLines"></span>
+    </button>
+  </label>
+  <div class="userInfoWrap">
+    <div class="userInfo" (click)="userInfo()">
+      <div class="circle"></div>
+    </div>
+    <div class="userName">
+      User info
+    </div>
+  </div>
+  <div class="mainWrapHeart">
+    <div class="wrapHeart" (click)="favorites()">
+      <i class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+</div>
